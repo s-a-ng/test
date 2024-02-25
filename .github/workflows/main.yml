@@ -1,0 +1,15 @@
+name: lol
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Initializing Setup
+      run: ./install.sh
+    - name: Keep Alive
+      run: ./timeout.sh
