@@ -12,5 +12,5 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: Starting Report
+    - name: startinng
       run: ./main.py ${{ github.event.inputs.jjjjjj }}
